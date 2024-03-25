@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-MyTestSuite" class="navigator-link">
+              <span class="suite-name border-failed">MyTestSuite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-MyTestSuite" class="navigator-link ">
+                    <span>C:\Users\gurja\eclipse-workspace\SauceDemoAutomationFramework\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-MyTestSuite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-MyTestSuite" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-MyTestSuite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-MyTestSuite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-MyTestSuite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-MyTestSuite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">15 methods, 1 failed,  1 skipped,  13 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-MyTestSuite" class="hide-methods failed suite-MyTestSuite"> (hide)</a> <!-- hide-methods failed suite-MyTestSuite -->
+                      <a href="#" panel-name="suite-MyTestSuite" class="show-methods failed suite-MyTestSuite"> (show)</a> <!-- show-methods failed suite-MyTestSuite -->
+                    </span>
+                    <div class="method-list-content failed suite-MyTestSuite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MyTestSuite" title="com.saucedemo.testpages.InventoryPageTest" class="method navigator-link" hash-for-method="validateLogoutButton">validateLogoutButton</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-MyTestSuite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Retried methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-MyTestSuite" class="hide-methods skipped suite-MyTestSuite"> (hide)</a> <!-- hide-methods skipped suite-MyTestSuite -->
+                      <a href="#" panel-name="suite-MyTestSuite" class="show-methods skipped suite-MyTestSuite"> (show)</a> <!-- show-methods skipped suite-MyTestSuite -->
+                    </span>
+                    <div class="method-list-content skipped suite-MyTestSuite">
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-MyTestSuite" title="com.saucedemo.testpages.InventoryPageTest" class="method navigator-link" hash-for-method="validateLogoutButton">validateLogoutButton</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-MyTestSuite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-MyTestSuite" class="hide-methods passed suite-MyTestSuite"> (hide)</a> <!-- hide-methods passed suite-MyTestSuite -->
+                      <a href="#" panel-name="suite-MyTestSuite" class="show-methods passed suite-MyTestSuite"> (show)</a> <!-- show-methods passed suite-MyTestSuite -->
+                    </span>
+                    <div class="method-list-content passed suite-MyTestSuite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MyTestSuite" title="com.saucedemo.testpages.CheckoutPageTest" class="method navigator-link" hash-for-method="validateBackToProductsButtonIsWorking">validateBackToProductsButtonIsWorking</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MyTestSuite" title="com.saucedemo.testpages.CartPageTest" class="method navigator-link" hash-for-method="validateCheckoutButtonOnCartPage">validateCheckoutButtonOnCartPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MyTestSuite" title="com.saucedemo.testpages.CheckoutPageTest" class="method navigator-link" hash-for-method="validateFinishButton">validateFinishButton</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MyTestSuite" title="com.saucedemo.testpages.CheckoutPageTest" class="method navigator-link" hash-for-method="validateIfContinueButtonForCheckoutIsWorking">validateIfContinueButtonForCheckoutIsWorking</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MyTestSuite" title="com.saucedemo.testpages.CartPageTest" class="method navigator-link" hash-for-method="validateIfRedAndBoltTShirtAvailableInCart">validateIfRedAndBoltTShirtAvailableInCart</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MyTestSuite" title="com.saucedemo.testpages.SauceDemoPageTest" class="method navigator-link" hash-for-method="validateIfUserCanLogin(error_user, secret_sauce)">validateIfUserCanLogin(error_user, secret_sauce)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MyTestSuite" title="com.saucedemo.testpages.SauceDemoPageTest" class="method navigator-link" hash-for-method="validateIfUserCanLogin(problem_user, secret_sauce)">validateIfUserCanLogin(problem_user, secret_sauce)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MyTestSuite" title="com.saucedemo.testpages.SauceDemoPageTest" class="method navigator-link" hash-for-method="validateIfUserCanLogin(standard_user, secret_sauce)">validateIfUserCanLogin(standard_user, secret_sauce)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MyTestSuite" title="com.saucedemo.testpages.SauceDemoPageTest" class="method navigator-link" hash-for-method="validateIfUserCanLogin(visual_user, secret_sauce)">validateIfUserCanLogin(visual_user, secret_sauce)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MyTestSuite" title="com.saucedemo.testpages.SauceDemoPageTest" class="method navigator-link" hash-for-method="validateIfUserCanLogin(performance_glitch_user, secret_sauce)">validateIfUserCanLogin(performance_glitch_user, secret_sauce)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MyTestSuite" title="com.saucedemo.testpages.InventoryPageTest" class="method navigator-link" hash-for-method="validateIfUserCanSetPriceFromLowToHigh">validateIfUserCanSetPriceFromLowToHigh</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MyTestSuite" title="com.saucedemo.testpages.SauceDemoPageTest" class="method navigator-link" hash-for-method="validateLockOutUserCanNotLogin">validateLockOutUserCanNotLogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MyTestSuite" title="com.saucedemo.testpages.CheckoutPageTest" class="method navigator-link" hash-for-method="validateTotalPaymentOnPage">validateTotalPaymentOnPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-MyTestSuite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-MyTestSuite" class="panel MyTestSuite">
+          <div class="suite-MyTestSuite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.saucedemo.testpages.InventoryPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateLogoutButton">
+                  </a> <!-- validateLogoutButton -->
+                  <span class="method-name">validateLogoutButton</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=122.0.6261.131)
+Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.7&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [33fce541097ddc668c8df76d87edce60, clickElement {id=f.8BF6EBDBA8CBAA2F230A30C865A32FBC.d.F79524BF54CE8752300C71B64F60ECFC.e.36}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.131, chrome: {chromedriverVersion: 122.0.6261.128 (f18a44fedeb..., userDataDir: C:\Users\gurja\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55523}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55523/devtoo..., se:cdpVersion: 122.0.6261.131, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (33fce541097ddc668c8df76d87edce60)] -&gt; css selector: #logout_sidebar_link]
+Session ID: 33fce541097ddc668c8df76d87edce60
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy19.click(Unknown Source)
+	at com.saucedemo.pages.InventoryPage.clickOnLogout(InventoryPage.java:91)
+	at com.saucedemo.testpages.InventoryPageTest.validateLogoutButton(InventoryPageTest.java:36)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 36 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-MyTestSuite-class-failed -->
+          <div class="suite-MyTestSuite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.saucedemo.testpages.InventoryPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateLogoutButton">
+                  </a> <!-- validateLogoutButton -->
+                  <span class="method-name">validateLogoutButton</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=122.0.6261.131)
+Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.7&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [40a1acd2655634ab4b65dfd964ca9e40, clickElement {id=f.A3AC22EBF131B9DAAFF9F364E60BD01C.d.A2512A9746CB5E0110DC980C3BC905D2.e.35}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.131, chrome: {chromedriverVersion: 122.0.6261.128 (f18a44fedeb..., userDataDir: C:\Users\gurja\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55494}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55494/devtoo..., se:cdpVersion: 122.0.6261.131, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (40a1acd2655634ab4b65dfd964ca9e40)] -&gt; css selector: #logout_sidebar_link]
+Session ID: 40a1acd2655634ab4b65dfd964ca9e40
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy19.click(Unknown Source)
+	at com.saucedemo.pages.InventoryPage.clickOnLogout(InventoryPage.java:91)
+	at com.saucedemo.testpages.InventoryPageTest.validateLogoutButton(InventoryPageTest.java:36)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 36 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-MyTestSuite-class-skipped -->
+          <div class="suite-MyTestSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.saucedemo.testpages.CartPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateCheckoutButtonOnCartPage">
+                  </a> <!-- validateCheckoutButtonOnCartPage -->
+                  <span class="method-name">validateCheckoutButtonOnCartPage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateIfRedAndBoltTShirtAvailableInCart">
+                  </a> <!-- validateIfRedAndBoltTShirtAvailableInCart -->
+                  <span class="method-name">validateIfRedAndBoltTShirtAvailableInCart</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-MyTestSuite-class-passed -->
+          <div class="suite-MyTestSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.saucedemo.testpages.SauceDemoPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateIfUserCanLogin(error_user, secret_sauce)">
+                  </a> <!-- validateIfUserCanLogin(error_user, secret_sauce) -->
+                  <span class="method-name">validateIfUserCanLogin</span>
+                  <span class="parameters">(error_user,secret_sauce)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateIfUserCanLogin(problem_user, secret_sauce)">
+                  </a> <!-- validateIfUserCanLogin(problem_user, secret_sauce) -->
+                  <span class="method-name">validateIfUserCanLogin</span>
+                  <span class="parameters">(problem_user,secret_sauce)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateIfUserCanLogin(standard_user, secret_sauce)">
+                  </a> <!-- validateIfUserCanLogin(standard_user, secret_sauce) -->
+                  <span class="method-name">validateIfUserCanLogin</span>
+                  <span class="parameters">(standard_user,secret_sauce)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateIfUserCanLogin(visual_user, secret_sauce)">
+                  </a> <!-- validateIfUserCanLogin(visual_user, secret_sauce) -->
+                  <span class="method-name">validateIfUserCanLogin</span>
+                  <span class="parameters">(visual_user,secret_sauce)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateIfUserCanLogin(performance_glitch_user, secret_sauce)">
+                  </a> <!-- validateIfUserCanLogin(performance_glitch_user, secret_sauce) -->
+                  <span class="method-name">validateIfUserCanLogin</span>
+                  <span class="parameters">(performance_glitch_user,secret_sauce)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateLockOutUserCanNotLogin">
+                  </a> <!-- validateLockOutUserCanNotLogin -->
+                  <span class="method-name">validateLockOutUserCanNotLogin</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-MyTestSuite-class-passed -->
+          <div class="suite-MyTestSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.saucedemo.testpages.CheckoutPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateBackToProductsButtonIsWorking">
+                  </a> <!-- validateBackToProductsButtonIsWorking -->
+                  <span class="method-name">validateBackToProductsButtonIsWorking</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateFinishButton">
+                  </a> <!-- validateFinishButton -->
+                  <span class="method-name">validateFinishButton</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateIfContinueButtonForCheckoutIsWorking">
+                  </a> <!-- validateIfContinueButtonForCheckoutIsWorking -->
+                  <span class="method-name">validateIfContinueButtonForCheckoutIsWorking</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateTotalPaymentOnPage">
+                  </a> <!-- validateTotalPaymentOnPage -->
+                  <span class="method-name">validateTotalPaymentOnPage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-MyTestSuite-class-passed -->
+          <div class="suite-MyTestSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.saucedemo.testpages.InventoryPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateIfUserCanSetPriceFromLowToHigh">
+                  </a> <!-- validateIfUserCanSetPriceFromLowToHigh -->
+                  <span class="method-name">validateIfUserCanSetPriceFromLowToHigh</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-MyTestSuite-class-passed -->
+        </div> <!-- panel MyTestSuite -->
+        <div panel-name="test-xml-MyTestSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\gurja\eclipse-workspace\SauceDemoAutomationFramework\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;MyTestSuite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;com.saucedemo.Utils.CustomListener&quot;/&gt;
+    &lt;listener class-name=&quot;com.saucedemo.Utils.TransformerForRetry&quot;/&gt;
+    &lt;listener class-name=&quot;com.saucedemo.Utils.CustomListener&quot;/&gt;
+    &lt;listener class-name=&quot;com.saucedemo.Utils.ExtentReportListener&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.saucedemo.testpages.SauceDemoPageTest&quot;/&gt;
+      &lt;class name=&quot;com.saucedemo.testpages.InventoryPageTest&quot;/&gt;
+      &lt;class name=&quot;com.saucedemo.testpages.CartPageTest&quot;/&gt;
+      &lt;class name=&quot;com.saucedemo.testpages.CheckoutPageTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test --&gt;
+&lt;/suite&gt; &lt;!-- MyTestSuite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-MyTestSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for MyTestSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Test (4 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-MyTestSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for MyTestSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-MyTestSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for MyTestSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_MyTestSuite');
+function tableData_MyTestSuite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(15);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'validateLogoutButton')
+data.setCell(0, 2, 'com.saucedemo.testpages.InventoryPageTest')
+data.setCell(0, 3, 10822);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'validateLogoutButton')
+data.setCell(1, 2, 'com.saucedemo.testpages.InventoryPageTest')
+data.setCell(1, 3, 10790);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'validateIfUserCanLogin')
+data.setCell(2, 2, 'com.saucedemo.testpages.SauceDemoPageTest')
+data.setCell(2, 3, 5690);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'validateBackToProductsButtonIsWorking')
+data.setCell(3, 2, 'com.saucedemo.testpages.CheckoutPageTest')
+data.setCell(3, 3, 1556);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'validateTotalPaymentOnPage')
+data.setCell(4, 2, 'com.saucedemo.testpages.CheckoutPageTest')
+data.setCell(4, 3, 1465);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'validateFinishButton')
+data.setCell(5, 2, 'com.saucedemo.testpages.CheckoutPageTest')
+data.setCell(5, 3, 1356);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'validateIfContinueButtonForCheckoutIsWorking')
+data.setCell(6, 2, 'com.saucedemo.testpages.CheckoutPageTest')
+data.setCell(6, 3, 1171);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'validateIfRedAndBoltTShirtAvailableInCart')
+data.setCell(7, 2, 'com.saucedemo.testpages.CartPageTest')
+data.setCell(7, 3, 964);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'validateIfUserCanLogin')
+data.setCell(8, 2, 'com.saucedemo.testpages.SauceDemoPageTest')
+data.setCell(8, 3, 837);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'validateCheckoutButtonOnCartPage')
+data.setCell(9, 2, 'com.saucedemo.testpages.CartPageTest')
+data.setCell(9, 3, 814);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'validateIfUserCanSetPriceFromLowToHigh')
+data.setCell(10, 2, 'com.saucedemo.testpages.InventoryPageTest')
+data.setCell(10, 3, 764);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'validateIfUserCanLogin')
+data.setCell(11, 2, 'com.saucedemo.testpages.SauceDemoPageTest')
+data.setCell(11, 3, 543);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'validateIfUserCanLogin')
+data.setCell(12, 2, 'com.saucedemo.testpages.SauceDemoPageTest')
+data.setCell(12, 3, 538);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'validateIfUserCanLogin')
+data.setCell(13, 2, 'com.saucedemo.testpages.SauceDemoPageTest')
+data.setCell(13, 3, 529);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'validateLockOutUserCanNotLogin')
+data.setCell(14, 2, 'com.saucedemo.testpages.SauceDemoPageTest')
+data.setCell(14, 3, 520);
+window.suiteTableData['MyTestSuite']= { tableData: data, tableDiv: 'times-div-MyTestSuite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 38 seconds</span>
+              <div id="times-div-MyTestSuite">
+              </div> <!-- times-div-MyTestSuite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-MyTestSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for MyTestSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-MyTestSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-MyTestSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.saucedemo.testpages.SauceDemoPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">loggerSetup</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">launch</span>
+                <span class="method-start">1057 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateIfUserCanLogin(standard_user, secret_sauce)</span>
+                <span class="method-start">6374 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">quitBrowser</span>
+                <span class="method-start">7238 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launch</span>
+                <span class="method-start">7507 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateIfUserCanLogin(problem_user, secret_sauce)</span>
+                <span class="method-start">9726 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">quitBrowser</span>
+                <span class="method-start">10271 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launch</span>
+                <span class="method-start">10515 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateIfUserCanLogin(performance_glitch_user, secret_sauce)</span>
+                <span class="method-start">12556 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">quitBrowser</span>
+                <span class="method-start">18249 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launch</span>
+                <span class="method-start">18502 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateIfUserCanLogin(error_user, secret_sauce)</span>
+                <span class="method-start">20466 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">quitBrowser</span>
+                <span class="method-start">21011 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launch</span>
+                <span class="method-start">21235 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateIfUserCanLogin(visual_user, secret_sauce)</span>
+                <span class="method-start">23160 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">quitBrowser</span>
+                <span class="method-start">23693 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launch</span>
+                <span class="method-start">23891 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateLockOutUserCanNotLogin</span>
+                <span class="method-start">25920 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">quitBrowser</span>
+                <span class="method-start">26442 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.saucedemo.testpages.InventoryPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">loggerSetup</span>
+                <span class="method-start">26721 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">launch</span>
+                <span class="method-start">26724 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateIfUserCanSetPriceFromLowToHigh</span>
+                <span class="method-start">28644 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">quitBrowser</span>
+                <span class="method-start">29411 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launch</span>
+                <span class="method-start">29647 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateLogoutButton</span>
+                <span class="method-start">31561 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">quitBrowser</span>
+                <span class="method-start">42414 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launch</span>
+                <span class="method-start">42809 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">validateLogoutButton</span>
+                <span class="method-start">44841 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">quitBrowser</span>
+                <span class="method-start">56101 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.saucedemo.testpages.CartPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">loggerSetup</span>
+                <span class="method-start">56493 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">launch</span>
+                <span class="method-start">56493 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateIfRedAndBoltTShirtAvailableInCart</span>
+                <span class="method-start">58495 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">quitBrowser</span>
+                <span class="method-start">59459 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launch</span>
+                <span class="method-start">59685 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateCheckoutButtonOnCartPage</span>
+                <span class="method-start">61628 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">quitBrowser</span>
+                <span class="method-start">62446 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.saucedemo.testpages.CheckoutPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">loggerSetup</span>
+                <span class="method-start">62665 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">launch</span>
+                <span class="method-start">62670 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateIfContinueButtonForCheckoutIsWorking</span>
+                <span class="method-start">64698 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">quitBrowser</span>
+                <span class="method-start">65871 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launch</span>
+                <span class="method-start">66066 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateTotalPaymentOnPage</span>
+                <span class="method-start">67975 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">quitBrowser</span>
+                <span class="method-start">69442 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launch</span>
+                <span class="method-start">69693 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateFinishButton</span>
+                <span class="method-start">71601 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">quitBrowser</span>
+                <span class="method-start">72959 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launch</span>
+                <span class="method-start">73208 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateBackToProductsButtonIsWorking</span>
+                <span class="method-start">75153 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">quitBrowser</span>
+                <span class="method-start">76711 ms</span>
+              </div> <!-- configuration-method after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>
